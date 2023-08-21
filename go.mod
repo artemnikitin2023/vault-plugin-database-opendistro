@@ -1,4 +1,4 @@
-module github.com/WhizUs/vault-plugin-database-opendistro
+module github.com/artemnikitin2023/vault-plugin-database-opendistro
 
 go 1.13
 
@@ -6,7 +6,7 @@ require (
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
 	github.com/Microsoft/go-winio v0.4.14 // indirect
 	github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 // indirect
-	github.com/WhizUs/go-opendistro v0.0.0-20200625134320-c7e1f733da8d
+	github.com/artemnikitin2023/go-opendistro v0.0.0-20200625134320-c7e1f733da8d
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/containerd/continuity v0.0.0-20190827140505-75bee3e2ccb6 // indirect
 	github.com/docker/go-connections v0.4.0 // indirect

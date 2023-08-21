@@ -9,8 +9,8 @@ Package go-opendistro provides a simple client implementation to interact with t
 Usage:
 
 	import (
-        "github.com/WhizUs/go-opendistro"
-        "github.com/WhizUs/go-opendistro/security"
+        "github.com/artemnikitin2023/go-opendistro"
+        "github.com/artemnikitin2023/go-opendistro/security"
     )
 
 A client can be instantiated by providing a client configuration containing the user, password, base URL and a TLS configuration (optionally). For example:
@@ -41,7 +41,7 @@ A client can be instantiated by providing a client configuration containing the 
 		fmt.Printf("create user: %s\n", err)
 	}
 
-Some code snippets are provided within the https://github.com/WhizUs/go-opendistro/tree/master/example directory.
+Some code snippets are provided within the https://github.com/artemnikitin2023/go-opendistro/tree/master/example directory.
 
 Each of the resources is aimed to be implemented by a Go service object (f.e. opendistro.Security.UserService) which in turn
 provides available methods of the resource.

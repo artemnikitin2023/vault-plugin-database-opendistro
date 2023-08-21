@@ -72,13 +72,13 @@ func (f *FakeOpendistro) HandleRequests(w http.ResponseWriter, r *http.Request) 
 	}
 
 	switch {
-	case 0 == strings.Compare(r.URL.Path, "/_opendistro/_security/health"):
+	case 0 == strings.Compare(r.URL.Path, "/_plugins/_security/health"):
 		switch r.Method {
 		case http.MethodGet:
 			w.Write([]byte(healthcheck))
 			return
 		}
-	case strings.HasPrefix(r.URL.Path, "/_opendistro/_security/api/roles/"):
+	case strings.HasPrefix(r.URL.Path, "/_plugins/_security/api/roles/"):
 		switch r.Method {
 		case http.MethodPut:
 			if _, found := f.Roles[""]; found {
@@ -116,7 +116,7 @@ func (f *FakeOpendistro) HandleRequests(w http.ResponseWriter, r *http.Request) 
 			delete(f.Roles, "")
 			return
 		}
-	case strings.HasPrefix(r.URL.Path, "/_opendistro/_security/api/rolesmapping/"):
+	case strings.HasPrefix(r.URL.Path, "/_plugins/_security/api/rolesmapping/"):
 		switch r.Method {
 		case http.MethodPost:
 			if _, found := f.Users[""]; found {
@@ -135,7 +135,7 @@ func (f *FakeOpendistro) HandleRequests(w http.ResponseWriter, r *http.Request) 
 			delete(f.Users, "")
 			return
 		}
-	case strings.HasPrefix(r.URL.Path, "/_opendistro/_security/api/internalusers/"):
+	case strings.HasPrefix(r.URL.Path, "/_plugins/_security/api/internalusers/"):
 		switch r.Method {
 		case http.MethodPost:
 			if body["password"].(string) == "" {

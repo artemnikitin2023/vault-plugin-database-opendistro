@@ -1,7 +1,7 @@
 package main
 
 import (
-	opendistro "github.com/WhizUs/vault-plugin-database-opendistro"
+	opendistro "github.com/artemnikitin2023/vault-plugin-database-opendistro"
 	"github.com/hashicorp/vault/api"
 	"log"
 	"os"

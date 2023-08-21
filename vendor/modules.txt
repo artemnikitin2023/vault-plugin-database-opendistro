@@ -6,10 +6,10 @@ github.com/Microsoft/go-winio
 github.com/Microsoft/go-winio/pkg/guid
 # github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5
 github.com/Nvveen/Gotty
-# github.com/WhizUs/go-opendistro v0.0.0-20191109142623-d13365657768
-github.com/WhizUs/go-opendistro
-github.com/WhizUs/go-opendistro/common
-github.com/WhizUs/go-opendistro/security
+# github.com/artemnikitin2023/go-opendistro v0.0.0-20191109142623-d13365657768
+github.com/artemnikitin2023/go-opendistro
+github.com/artemnikitin2023/go-opendistro/common
+github.com/artemnikitin2023/go-opendistro/security
 # github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da
 github.com/armon/go-metrics
 # github.com/cenkalti/backoff v2.2.1+incompatible

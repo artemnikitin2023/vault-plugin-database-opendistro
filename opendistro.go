@@ -16,8 +16,8 @@ import (
 	"github.com/hashicorp/vault/sdk/database/helper/credsutil"
 	"github.com/hashicorp/vault/sdk/database/helper/dbutil"
 
-	od "github.com/WhizUs/go-opendistro"
-	odsec "github.com/WhizUs/go-opendistro/security"
+	od "github.com/artemnikitin2023/go-opendistro"
+	odsec "github.com/artemnikitin2023/go-opendistro/security"
 )
 
 func New() (interface{}, error) {

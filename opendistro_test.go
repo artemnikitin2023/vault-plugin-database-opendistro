@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/WhizUs/vault-plugin-database-opendistro/mock"
+	"github.com/artemnikitin2023/vault-plugin-database-opendistro/mock"
 	"github.com/hashicorp/vault/sdk/database/dbplugin"
 )
 

@@ -397,7 +397,7 @@ func NewOpendistroEnv(t *testing.T, client *http.Client, retAddress string) *Ope
 func (e *OpendistroEnv) Authenticate(t *testing.T, user, password string) bool {
 	t.Helper()
 
-	endpoint := "/_opendistro/_security/api/internalusers/" + user
+	endpoint := "/_plugins/_security/api/internalusers/" + user
 	method := http.MethodGet
 
 	req, err := http.NewRequest(method, e.BaseURL+endpoint, nil)
@@ -439,7 +439,7 @@ func (e *OpendistroEnv) Authenticate(t *testing.T, user, password string) bool {
 func (e *OpendistroEnv) createVaultRole(t *testing.T) {
 	t.Helper()
 
-	endpoint := "/_opendistro/_security/api/rolesmapping/all_access"
+	endpoint := "/_plugins/_security/api/rolesmapping/all_access"
 	method := http.MethodPatch
 
 	body, err := json.Marshal([]map[string]interface{}{
@@ -465,7 +465,7 @@ func (e *OpendistroEnv) CreateVaultUser(t *testing.T) {
 	t.Helper()
 	e.createVaultRole(t)
 
-	endpoint := "/_opendistro/_security/api/internalusers/" + esVaultUser
+	endpoint := "/_plugins/_security/api/internalusers/" + esVaultUser
 	method := http.MethodPut
 
 	type user struct {

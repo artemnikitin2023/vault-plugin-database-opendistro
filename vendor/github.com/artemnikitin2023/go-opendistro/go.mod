@@ -1,4 +1,4 @@
-module github.com/WhizUs/go-opendistro
+module github.com/artemnikitin2023/go-opendistro
 
 go 1.13
 
